@@ -1,0 +1,130 @@
+
+img {
+    object-fit: cover;
+}
+
+
+
+
+/* above the minimumm line height of 1.4 --> 1.6 and a fixed font size of 16 px*/
+* {
+    line-height: 1.6;
+    font-size: 16px;
+}
+body{
+    background-color: #f5e4c3;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/*  uses flex for layout, sets background and padding  makes my nav bar stay still/consistent for my website tuh alongside an outline */
+.nav-bar {
+    display: flex;
+    background-color: #f6a623; 
+    justify-content: space-evenly; 
+    align-items: center;
+    padding: 10px; 
+    margin: 3px; 
+    
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    outline: 3px solid #4a2b1c; 
+}
+/*  controls image size and margin */
+.Chicken-icon {
+    display: inline-block;
+    height: 65px; 
+    padding: 0px;  
+    
+
+}
+/* adds a outline of 3 pixels to all my images*/
+nav-bar img{
+    outline: 3px solid #4a2b1c;     
+}
+/* removes the underline effect for my nav bar hyperlinks and changes the colour of my nav bar oto a shadw of deep brown*/  
+.nav-bar a{
+    text-decoration: none;
+    color: #4a2b1c;
+}
+/* gives a hover effect through making it bigger on hover and a change of colour to a deep orange*/
+.nav-bar a:hover{
+    font-size: 18px;
+    color: #E4572E;
+    
+;
+}
+/* footer is a deep red with a brown 3 picel outline*/
+footer{
+    
+    background-color: #f26a5a;
+    outline: 3px solid #4a2b1c ;
+    width: 1600px;
+    height: 100px;
+}
+#headingss{
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #f26a5a;
+}
+.heading{
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+/* home page image*/
+.honey-garlic{
+    width: 550px;
+    height: 550px;
+    transform: rotate(-10deg);
+    margin: 50px;
+}
+/* for my story to emphasize text*/
+span{
+    color: #E4572E;
+    font-style: italic;
+}
+/* used to make the title for*/
+#thelegend{
+    color: #f26a5a;
+    font-size: 24px;
+}
+/* Grid layout for residential content */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f6a623;
+}
+.grid-containers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f6a623;
+}
+/*grid settings*/
+.grid-item {
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 3px;
+}
+/* spaced put images*/
+.grid-item img {
+    border-radius: 4px;
+    width: 300px;
+    height: 300px;
+}
+iframe{
+    width: 800px;
+    height:500px;
+}
