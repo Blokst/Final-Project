@@ -60,10 +60,10 @@ nav-bar img{
 }
 /* footer is a deep red with a brown 3 picel outline*/
 footer{
-    
+    text-align: center;
     background-color: #f26a5a;
     outline: 3px solid #4a2b1c ;
-    width: 1600px;
+    width: 1400px;
     height: 100px;
 }
 #headingss{
@@ -82,7 +82,17 @@ footer{
     height: 550px;
     transform: rotate(-10deg);
     margin: 50px;
+    animation: spinIn 1.5s ease-out;
+    padding: 50px;
 }
+.menuitems{
+
+    width: 550px;
+    height: 550px;
+    margin: 50px;
+    padding: 50px;
+}
+
 /* for my story to emphasize text*/
 span{
     color: #E4572E;
@@ -127,4 +137,65 @@ span{
 iframe{
     width: 800px;
     height:500px;
+}
+/* Rotating image on page load */
+
+
+@keyframes spinIn {
+from {
+    transform: rotate(0deg);
+    opacity: 0;
+}
+to {
+    transform: rotate(360deg);
+    opacity: 1;
+}
+}
+/* Appearing text animation */
+.intro-text {
+font-family: 'Segoe UI', sans-serif;
+font-size: 28px;
+color:  black;
+margin-top: 20px;
+opacity: 0;
+transform: translateY(20px);
+animation: fadeInUp 1s ease-out 1.2s forwards;
+color: #f26a5a;
+font-weight: bold;
+
+}
+
+/* Fade-in animation with both from and to */
+@keyframes fadeInUp {
+from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+/*Div so that the image and text side by side */
+.hero-container {
+display: flex;
+align-items: center;      
+justify-content: center;   
+gap: 20px;               
+margin-top: 40px;
+}
+.logo-swap {
+display: inline-block;
+position: relative;
+}
+
+.logoswap .Chicken-icon {
+display: block;
+transition: opacity 0.3s ease;
+}
+
+/* image it sawaps to whan you hover */
+.logoswap:hover .Chicken-icon {
+  content: url("images/ChatGPT\ Image\ Jun\ 11\,\ 2025\,\ 12_44_43\ AM.png"); /* this swaps the image */
 }
