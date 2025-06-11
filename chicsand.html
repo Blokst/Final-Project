@@ -1,0 +1,51 @@
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crispy Chick Fried Chicken</title>                                          
+        <link rel="stylesheet" href="style.css">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </title>
+    </head>
+    <header>
+    <nav class="nav-bar">
+    <a href="index.html">Home of THE Chicken</a>
+    <a href="deals.html">Deals</a>
+    <a href="index.html" class="logoswap">
+        <img class="Chicken-icon" src="images/ChatGPT Image Jun 11, 2025, 12_26_46 AM.png" alt="Image of a Chicken eating Fried Chicken (yellow)">
+    </a>
+    <a href="history.html">History of Our Brand</a>
+    <a href="menu.html">Menu</a>
+    </nav>
+
+    <audio id="hoverSound" src="sound/chicken-single-alarm-call-6056.mp3" preload="auto"></audio>
+    <!-- makes a ckuck sound upom hovering the logo icon on the nav bar-->
+    <script>
+        
+    const logo = document.querySelector('.Chicken-icon');
+    const sound = document.getElementById('hoverSound');
+
+    logo.addEventListener('mouseenter', () => {
+        sound.currentTime = 0;
+        sound.play();
+    });
+    </script>
+    <p class="heading">Signature Chicken Sandwich</p>
+    <div class="inline">
+    <img class="menuitems" src="images/Adobe Express - file.png "> 
+<div>
+    <p>This spicy chicken sandwich brings serious heat with its crispy, golden coating and juicy center. It’s layered with bold sauce, sharp pickles, and a soft, toasted bun. Simple, fiery, and straight to the point,/ it hits hard and keeps you coming back.
+    </p>
+
+    <p> Pick which meal option you want</p>
+    <form>
+    <input type="radio" id="html" name="menuitem1" value="HTML">
+    <label for="html">Chicken Sandwich-$9.99&middot;730 cal </label><br>
+    <input type="radio" id="chiccombo" name="menuitem1" value="chiccombo">
+    <label for="css">Chicken Sandwich Combo(Chicken Sandwich, small cajun fries and a large fountain drink) 13.99&middot;730 cal</label><br>
+    <input type="submit" id="Indigenous" name="h" value="Submit">
+    </form>
+    </div>      
+    </div>
+    <footer>
+    </p>TM  & &copy; All Rights Reserved to Crispy Chick Fried Chicken Inc</p>
+    <p> All image and video right are to the credit of Chat GPT and Popeyes</p>
+    </footer>
+

@@ -1,0 +1,44 @@
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crispy Chick Fried Chicken</title>                                          
+        <link rel="stylesheet" href="style.css">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </title>
+    </head>
+    <header>
+    <nav class="nav-bar">
+    <a href="index.html">Home of THE Chicken</a>
+    <a href="deals.html">Deals</a>
+    <a href="index.html" class="logoswap">
+        <img class="Chicken-icon" src="images/ChatGPT Image Jun 11, 2025, 12_26_46 AM.png" alt="Image of a Chicken eating Fried Chicken (yellow)">
+    </a>
+    <a href="history.html">History of Our Brand</a>
+    <a href="menu.html">Menu</a>
+    </nav>
+    <style>
+.thanksforthemoneytwin {
+    background-image: url("images/ChatGPT\ Image\ Jun\ 11\,\ 2025\,\ 03_21_07\ PM.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    margin-top: 10px; 
+    position: relative;
+    z-index: 1;
+}
+
+    </style>
+    <audio id="hoverSound" src="sound/chicken-single-alarm-call-6056.mp3" preload="auto"></audio>
+    <!-- makes a ckuck sound upom hovering the logo icon on the nav bar-->
+    <script>
+        
+    const logo = document.querySelector('.Chicken-icon');
+    const sound = document.getElementById('hoverSound');
+
+    logo.addEventListener('mouseenter', () => {
+        sound.currentTime = 0;
+        sound.play();
+    });
+    </script>
+    <div class="thanksforthemoneytwin">
+
+    </div>

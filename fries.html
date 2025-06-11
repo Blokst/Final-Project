@@ -1,0 +1,51 @@
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crispy Chick Fried Chicken</title>                                          
+        <link rel="stylesheet" href="style.css">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </title>
+    </head>
+    <header>
+    <nav class="nav-bar">
+    <a href="index.html">Home of THE Chicken</a>
+    <a href="deals.html">Deals</a>
+    <a href="index.html" class="logoswap">
+        <img class="Chicken-icon" src="images/ChatGPT Image Jun 11, 2025, 12_26_46 AM.png" alt="Image of a Chicken eating Fried Chicken (yellow)">
+    </a>
+    <a href="history.html">History of Our Brand</a>
+    <a href="menu.html">Menu</a>
+    </nav>
+
+    <audio id="hoverSound" src="sound/chicken-single-alarm-call-6056.mp3" preload="auto"></audio>
+    <!-- makes a ckuck sound upom hovering the logo icon on the nav bar-->
+    <script>
+        
+    const logo = document.querySelector('.Chicken-icon');
+    const sound = document.getElementById('hoverSound');
+
+    logo.addEventListener('mouseenter', () => {
+        sound.currentTime = 0;
+        sound.play();
+    });
+    </script>
+    <p class="heading">Signature Cajun Fries</p>
+    <div class="inline">
+    <img class="menuitems" src="images/Largecajunfries.png"> 
+<div>
+    <p>These Cajun fries come loaded with bold spice, smoky swagger, and just the right kick to keep your taste buds dancing until the very last fry.
+    </p>
+
+    <p> Pick which meal option you want</p>
+    <form>
+    <input type="radio" id="html" name="menuitem4" value="fry">
+    <label for="html"> Medium Cajun Fries $6.79&middot;200 cal</label><br>
+    <input type="radio" id="chiccombo" name="menuitem4" value="fries">
+    <label for="css">Large Cajun Fries $8.79&middot;350 cal </label><br>
+    <input type="submit" id="submit" name="h" value="Submit">
+    </form>
+    </div>      
+    </div>
+    <footer>
+    </p>TM  & &copy; All Rights Reserved to Crispy Chick Fried Chicken Inc</p>
+    <p> All image and video right are to the credit of Chat GPT and Popeyes</p>
+    </footer>
+

@@ -1,0 +1,52 @@
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crispy Chick Fried Chicken</title>                                          
+        <link rel="stylesheet" href="style.css">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </title>
+    </head>
+    <header>
+    <nav class="nav-bar">
+    <a href="index.html">Home of THE Chicken</a>
+    <a href="deals.html">Deals</a>
+    <a href="index.html" class="logoswap">
+        <img class="Chicken-icon" src="images/ChatGPT Image Jun 11, 2025, 12_26_46 AM.png" alt="Image of a Chicken eating Fried Chicken (yellow)">
+    </a>
+    <a href="history.html">History of Our Brand</a>
+    <a href="menu.html">Menu</a>
+    </nav>
+
+    <audio id="hoverSound" src="sound/chicken-single-alarm-call-6056.mp3" preload="auto"></audio>
+    <!-- makes a ckuck sound upom hovering the logo icon on the nav bar-->
+    <script>
+        
+    const logo = document.querySelector('.Chicken-icon');
+    const sound = document.getElementById('hoverSound');
+
+    logo.addEventListener('mouseenter', () => {
+        sound.currentTime = 0;
+        sound.play();
+    });
+    </script>
+    <p class="heading">Signature Chicken Nuggets</p>
+    <div class="inline">
+    <img class="menuitems" src="images/nuigget.png"> 
+<div>
+    <p>These aren’t just chicken nuggets—they’re golden, crispy bites of pure joy, handcrafted to perfection with a crunch that echoes across dreams. Each piece is seasoned to legendary status, locking in juicy tenderness that melts with every chew. One taste and you'll swear they were blessed by the flavor gods themselves.
+
+    </p>
+
+    <p> Pick which meal option you want</p>
+    <form>
+    <input type="radio" id="html" name="menuitem2" value="nugg">
+    <label for="html">Chicken Nuggets 12pc $10.99&middot;730 cal </label><br>
+    <input type="radio" id="chiccombo" name="menuitem2" value="nuggs">
+    <label for="css"> Chicken Nuggets 24pc $20.79&middot;1560 cal</label><br>
+    <input type="submit" id="Indigenous" name="h" value="Submit">
+    </form>
+    </div>      
+    </div>
+    <footer>
+    </p>TM  & &copy; All Rights Reserved to Crispy Chick Fried Chicken Inc</p>
+    <p> All image and video right are to the credit of Chat GPT and Popeyes</p>
+    </footer>
+

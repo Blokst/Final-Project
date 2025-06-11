@@ -1,0 +1,53 @@
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crispy Chick Fried Chicken</title>                                          
+        <link rel="stylesheet" href="style.css">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </title>
+    </head>
+    <header>
+    <nav class="nav-bar">
+    <a href="index.html">Home of THE Chicken</a>
+    <a href="deals.html">Deals</a>
+    <a href="index.html" class="logoswap">
+        <img class="Chicken-icon" src="images/ChatGPT Image Jun 11, 2025, 12_26_46 AM.png" alt="Image of a Chicken eating Fried Chicken (yellow)">
+    </a>
+    <a href="history.html">History of Our Brand</a>
+    <a href="menu.html">Menu</a>
+    </nav>
+
+    <audio id="hoverSound" src="sound/chicken-single-alarm-call-6056.mp3" preload="auto"></audio>
+    <!-- makes a ckuck sound upom hovering the logo icon on the nav bar-->
+    <script>
+        
+    const logo = document.querySelector('.Chicken-icon');
+    const sound = document.getElementById('hoverSound');
+
+    logo.addEventListener('mouseenter', () => {
+        sound.currentTime = 0;
+        sound.play();
+    });
+    </script>
+    <p class="heading">Signature Chicken Tenders</p>
+    <div class="inline">
+    <img class="menuitems" src="images/tenders.png"> 
+<div>
+    <p>These chicken tenders are thick-cut, hand-breaded wonders, crispy on the outside, unbelievably juicy inside, and made to be dunked, devoured, and obsessed over.
+    </p>
+
+    <p> Pick which meal option you want</p>
+    <form>
+    <input type="radio" id="html" name="menuitem3" value="chictend">
+    <label for="html">Chicken Tenders 6pc- $22.49&middot;726 cal </label><br>
+    <input type="radio" id="chiccombo" name="menuitem3" value="chictends">
+    <label for="css">Chicken Tenders 12pc - $32.49&middot;1370 cal </label><br>
+    <a href="postpay.html">
+    <input type="submit" id="Indigenous" name="h" value="Submit">
+    </a>
+    </form>
+    </div>      
+    </div>
+    <footer>
+    </p>TM  & &copy; All Rights Reserved to Crispy Chick Fried Chicken Inc</p>
+    <p> All image and video right are to the credit of Chat GPT and Popeyes</p>
+    </footer>
+

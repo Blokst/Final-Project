@@ -34,6 +34,13 @@ body{
     top: 0;
     outline: 3px solid #4a2b1c; 
 }
+/* makjes somkething inline*/
+.inline{
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    outline: 6px solid #f6a623;
+}
 /*  controls image size and margin */
 .Chicken-icon {
     display: inline-block;
@@ -63,17 +70,18 @@ footer{
     text-align: center;
     background-color: #f26a5a;
     outline: 3px solid #4a2b1c ;
-    width: 1400px;
+    width: 1600px;
     height: 100px;
 }
 #headingss{
     font-size: 36px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #f26a5a;
 }
 .heading{
     font-size: 36px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
     
 }
 /* home page image*/
@@ -86,11 +94,11 @@ footer{
     padding: 50px;
 }
 .menuitems{
-
-    width: 550px;
-    height: 550px;
-    margin: 50px;
-    padding: 50px;
+    
+    width: 400px;
+    height: 400px;
+    margin-top:50px;
+    padding: 20px;
 }
 
 /* for my story to emphasize text*/
@@ -112,6 +120,11 @@ span{
     margin: 0 auto;
     padding: 20px;
     background-color: #f6a623;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 .grid-containers {
     display: grid;
@@ -140,7 +153,7 @@ iframe{
 }
 /* Rotating image on page load */
 
-
+/* rotating and appearing image on load in*/
 @keyframes spinIn {
 from {
     transform: rotate(0deg);
@@ -152,21 +165,21 @@ to {
 }
 }
 /* Appearing text animation */
-.intro-text {
+.grandentrance {
 font-family: 'Segoe UI', sans-serif;
-font-size: 28px;
+font-size: 36px;
 color:  black;
 margin-top: 20px;
 opacity: 0;
 transform: translateY(20px);
-animation: fadeInUp 1s ease-out 1.2s forwards;
+animation: fadeIn 1s ease-out 1.2s forwards;
 color: #f26a5a;
 font-weight: bold;
 
 }
 
 /* Fade-in animation with both from and to */
-@keyframes fadeInUp {
+@keyframes fadeIn {
 from {
     opacity: 0;
     transform: translateY(20px);
@@ -189,7 +202,7 @@ margin-top: 40px;
 display: inline-block;
 position: relative;
 }
-
+/* slightly changes the opacity for smoother animatiooon*/
 .logoswap .Chicken-icon {
 display: block;
 transition: opacity 0.3s ease;

@@ -1,0 +1,69 @@
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crispy Chick Fried Chicken</title>                                          
+        <link rel="stylesheet" href="style.css">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </title>
+    </head>
+    <header>
+    <nav class="nav-bar">
+    <a href="index.html">Home of THE Chicken</a>
+    <a href="deals.html">Deals</a>
+    <a href="index.html" class="logoswap">
+        <img class="Chicken-icon" src="images/ChatGPT Image Jun 11, 2025, 12_26_46 AM.png" alt="Image of a Chicken eating Fried Chicken (yellow)">
+    </a>
+    <a href="history.html">History of Our Brand</a>
+    <a href="menu.html">Menu</a>
+    </nav>
+
+    <audio id="hoverSound" src="sound/chicken-single-alarm-call-6056.mp3" preload="auto"></audio>
+<style>
+        form{
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px;
+}
+    </style>
+    <!-- makes a ckuck sound upom hovering the logo icon on the nav bar-->
+<script>
+        
+    const logo = document.querySelector('.Chicken-icon');
+    const sound = document.getElementById('hoverSound');
+
+    logo.addEventListener('mouseenter', () => {
+        sound.currentTime = 0;
+        sound.play();
+    });
+</script>
+
+
+<!-- Contact form -->
+<main>
+    <h1 class="heading" tabindex="0">Fill the information below and pay now</h1>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Name</label>
+        <textarea id="message" name="message" rows="1" required></textarea>
+        <label for="message">Credit Card Number</label>
+        <textarea id="message" name="message" rows="1" required></textarea>
+        <label for="message">Expiration Date</label>
+        <textarea id="message" name="message" rows="1" required></textarea>
+        <label for="message">CVV</label>
+        <textarea id="message" name="message" rows="1" required></textarea>
+
+        <button type="submit">Pay now</button>
+    </form>
+</main>
+<br><br><br><br><br><br><br><br><br> 
+<footer>
+    <p>&copy; 2025 Naawi-Oodena Development</p>
+</footer>
+</body>
+</html>
