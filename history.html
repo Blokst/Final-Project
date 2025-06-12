@@ -5,62 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-<nav class="nav-bar">
-<a href="index.html">Home of THE Chicken</a>
-<a href="deals.html">Deals</a>
-<a href="index.html" class="logoswap">
-    <img class="Chicken-icon" src="images/ChatGPT Image Jun 11, 2025, 12_26_46 AM.png" alt="Image of a Chicken eating Fried Chicken (yellow)">
-</a>
-<a href="history.html">History of Our Brand</a>
-<a href="menu.html">Menu</a>
-</nav>
+    <!-- navigation bar with links to different pages -->
+    <nav class="nav-bar">
+        <a href="index.html">Home of THE Chicken</a>
+        <a href="rules.html">The Rules</a>
+        <a href="index.html" class="logoswap">
+            <img class="Chicken-icon" src="images/ChatGPT Image Jun 11, 2025, 12_26_46 AM.png" alt="Image of a Chicken eating Fried Chicken (yellow)">
+        </a>
+        <a href="history.html">History of Our Brand</a>
+        <a href="menu.html">Menu</a>
+    </nav>
 
-<audio id="hoverSound" src="sound/chicken-single-alarm-call-6056.mp3" preload="auto"></audio>
+    <!-- audio file to play sound on hover -->
+    <audio id="hoverSound" src="sound/chicken-single-alarm-call-6056.mp3" preload="auto"></audio>
 
-<script>
-const logo = document.querySelector('.Chicken-icon');
-const sound = document.getElementById('hoverSound');
+    <!-- find the chicken logo image -->
+    <script>
+        const logo = document.querySelector('.Chicken-icon');
+        const sound = document.getElementById('hoverSound');
 
-logo.addEventListener('mouseenter', () => {
-    sound.currentTime = 0;
-    sound.play();
-});
-</script>
+        // when mouse goes over the logo, play the sound
+        logo.addEventListener('mouseenter', () => {
+            // start sound from beginning
+            sound.currentTime = 0;
+            // play the sound
+            sound.play();
+        });
+    </script>
 </head>
 <body>
+    <!-- yap about history of brand-->
     <p>
+        <p id="headingss">🍗 The Legend of Crispy Chick Fried Chicken 🐔</p><br>
+
+        At the edge of the quiet town of Cluckington, there was a cozy little chicken shop called <span>Crispy Chick Fried Chicken</span>. It only opened in the evenings, and every day at exactly <span>5:55 PM</span>, the smell of warm honey garlic and crispy goodness floated through the streets.
+
+        The townsfolk whispered stories. Some said the chicken was *so* crispy it crackled even when you weren’t eating it. Others claimed they saw chicken tenders bounce on their own. The bravest kids dared each other to order the <span>Founder’s Feast</span> — a super-sized meal wrapped in golden foil and sealed with a mysterious red stamp.
+
+        One day, a curious kid named Juno decided to try it.
+
+        The moment she took a bite, the lights flickered, the deep fryer made a funny “bwaaaaak!” sound, and suddenly—**BOOM!**—the fryer popped open like a popcorn machine, and out flew a little chicken in a red cape and sunglasses!
+
+        “Surprise!” he said. “I’m <span>General Chick</span>, keeper of the flavor! You passed the test!”
+
+        Turns out, the <span>Founder’s Feast </span> wasn’t cursed  it was magical! Only people with kindness, courage, and good taste could unlock the secret.
+
+        From that day on,<span>Crispy Chick </span>  the happiest restaurant in town. The fries played music, the chicken did a little dance, and if you dipped a nugget with a smile, it sparkled.
+
+        But remember:<br>
+        <span>Never put ketchup on a drumstick.</span><br>
+        That still makes the fryer grumble. 😄
         
-
-<p id="headingss">🍗 The Legend of Crispy Chick Fried Chicken 🐔</p><br>
-
-At the edge of the quiet town of Cluckington, there was a cozy little chicken shop called <span>Crispy Chick Fried Chicken</span>. It only opened in the evenings, and every day at exactly <span>5:55 PM</span>, the smell of warm honey garlic and crispy goodness floated through the streets.
-
-The townsfolk whispered stories. Some said the chicken was *so* crispy it crackled even when you weren’t eating it. Others claimed they saw chicken tenders bounce on their own. The bravest kids dared each other to order the <span>Founder’s Feast</span> — a super-sized meal wrapped in golden foil and sealed with a mysterious red stamp.
-
-One day, a curious kid named Juno decided to try it.
-
-The moment she took a bite, the lights flickered, the deep fryer made a funny “bwaaaaak!” sound, and suddenly—**BOOM!**—the fryer popped open like a popcorn machine, and out flew a little chicken in a red cape and sunglasses!
-
-“Surprise!” he said. “I’m <span>General Chick</span>, keeper of the flavor! You passed the test!”
-
-Turns out, the <span>Founder’s Feast </span> wasn’t cursed  it was magical! Only people with kindness, courage, and good taste could unlock the secret.
-
-From that day on,<span>Crispy Chick </span>  the happiest restaurant in town. The fries played music, the chicken did a little dance, and if you dipped a nugget with a smile, it sparkled.
-
-But remember:<br>
-<span>Never put ketchup on a drumstick.</span><br>
-That still makes the fryer grumble. 😄
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8vRsdP0ikeQ?si=1arH9G2eoaS-zlWl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<a href="https://www.youtube.com/embed/8vRsdP0ikeQ?si=1arH9G2eoaS-zlWl">Link to the commerical</a>
-</p>
+        
     <form>
-            <p>Could you give us some constructive feedback on what you think about this story in the text area down below:</p><br>
+        <!-- feedback form asking for user thoughts -->
+        <p>Could you give us some constructive feedback on what you think about this story in the text area down below:</p><br>
+        <!-- text area for feedback -->
         <textarea id="message" name="message" rows="5" required></textarea><br>
+        <!-- submit button -->
         <input type="submit" id="Indigenous" name="h" value="Submit">
     </form>
-        <p>Thanks for the time</p>
+    <p>Thanks for the time</p>
+    <!-- youtube video -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8vRsdP0ikeQ?si=1arH9G2eoaS-zlWl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <!-- link to the video in case iframe doesn't work -->
+        <a href="https://www.youtube.com/embed/8vRsdP0ikeQ?si=1arH9G2eoaS-zlWl">Link to the commerical</a>
+    </p>
 </body>
-<footer>
-        </P>TM  & &copy; All Rights Reserved to Crispy Chick Fried Chicken Inc
-    </footer>
+<!-- footer to credit the work-->
+<footer tabindex="0">
+        <p>tm &copy; all rights reserved to crispy chick fried chicken inc</p>
+        <p>all image and video rights are credited to chat gpt and popeyes</p>
+</footer>
 </html>

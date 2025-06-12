@@ -1,93 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-    <link rel="stylesheet" href="style.css">
-<nav class="nav-bar">
-<a href="index.html">Home of THE Chicken</a>
-<a href="deals.html">Deals</a>
-<a href="index.html" class="logoswap">
-    <img class="Chicken-icon" src="images/ChatGPT Image Jun 11, 2025, 12_26_46 AM.png" alt="Image of a Chicken eating Fried Chicken (yellow)">
-</a>
-<a href="history.html">History of Our Brand</a>
-<a href="menu.html">Menu</a>
-</nav>
-
-<audio id="hoverSound" src="sound/chicken-single-alarm-call-6056.mp3" preload="auto"></audio>
-
-<script>
-const logo = document.querySelector('.Chicken-icon');
-const sound = document.getElementById('hoverSound');
-
-logo.addEventListener('mouseenter', () => {
-    sound.currentTime = 0;
-    sound.play();
-});
-</script>
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- responsive -->
+    <title>Menu</title> <!-- page title -->
+    <link rel="stylesheet" href="style.css" /> <!-- external CSS -->
 </head>
 <body>
+    <!-- Navigation bar: consistent across pages -->
+    <nav class="nav-bar">
+        <a href="index.html">Home of THE Chicken</a>
+        <a href="rules.html">The Rules</a>
+        <a href="index.html" class="logoswap">
+            <img class="Chicken-icon" src="images/ChatGPT Image Jun 11, 2025, 12_26_46 AM.png" alt="Image of a Chicken eating Fried Chicken (yellow)" />
+        </a>
+        <a href="history.html">History of Our Brand</a>
+        <a href="menu.html">Menu</a>
+    </nav>
+
+    <!-- Hover sound for logo -->
+    <audio id="hoverSound" src="sound/chicken-single-alarm-call-6056.mp3" preload="auto"></audio>
+
+    <script>
+        // play sound on logo hover
+        const logo = document.querySelector('.Chicken-icon');
+        const sound = document.getElementById('hoverSound');
+        logo.addEventListener('mouseenter', () => {
+            sound.currentTime = 0;
+            sound.play();
+        });
+    </script>
+
+    <!-- Menu grid container -->
     <div class="grid-container">
-    <!-- Honey Garlic Chicken Sandwich Item and Description-->
-    <div class="grid-item" tabindex="0">
-        <h2 class="subheading">Spicy Chicken Sandwich</h2>
-        <a href="chicsand.html">
-        <img src="images/ChatGPT Image Jun 10, 2025, 03_13_19 PM.png" alt="Spicy Chicken Sandwich" />
-        <p>Crispy chicken drenched in sweet honey garlic sauce, tucked in a soft brioche bun. Sticky, juicy, unforgettable.
-        <br><p> $9.99&middot;730 cal</p>
-        </p>
+        <!-- Spicy Chicken Sandwich -->
+        <div class="grid-item" tabindex="0">
+            <h2 class="subheading">Spicy Chicken Sandwich</h2>
+            <a href="chicsand.html">
+                <img src="images/ChatGPT Image Jun 10, 2025, 03_13_19 PM.png" alt="Spicy Chicken Sandwich" />
+                <p>
+                    Crispy chicken drenched in sweet honey garlic sauce, tucked in a soft brioche bun. Sticky, juicy, unforgettable.<br />
+                    $9.99 &middot; 730 cal
+                </p>
+            </a>
+        </div>
+
+        <!-- 12pc Chicken Tenders -->
+        <a href="chictend.html">
+            <div class="grid-item" tabindex="0">
+                <h2 class="subheading">Chicken Tenders - 12pc</h2>
+                <img src="images/tenders.png" alt="12 pc Chicken Tenders" />
+                <p>
+                    Golden, hand-breaded strips. Crispy outside, tender inside, perfect for dipping, devouring, and repeating.<br />
+                    $32.49 &middot; 1370 cal
+                </p>
+            </div>
+        </a>
+
+        <!-- 12pc Boneless Wings -->
+        <a href="wings.html">
+            <div class="grid-item" tabindex="0">
+                <h2 class="subheading">12pc Boneless Wings</h2>
+                <img src="images/Boneless wings.png" alt="12pc Boneless Wings" />
+                <p>
+                    Bold, saucy, and built to thrill. Crispy wings tossed in flavor that hits every time.<br />
+                    $19.99 &middot; 900 cal
+                </p>
+            </div>
+        </a>
+
+        <!-- 8pc Chicken -->
+        <a href="chicken.html">
+            <div class="grid-item" tabindex="0">
+                <h2 class="subheading">8pc Chicken</h2>
+                <img src="images/Chicken.png" alt="8pc Chicken" />
+                <p>
+                    A shareable spread of crispy, juicy chicken. Eight pieces of pure comfort or domination.<br />
+                    $25.79 &middot; 1660 cal
+                </p>
+            </div>
+        </a>
+
+        <!-- 24pc Chicken Nuggets -->
+        <a href="nugg.html">
+            <div class="grid-item" tabindex="0">
+                <h2 class="subheading">24pc Chicken Nuggets</h2>
+                <img src="images/nuigget.png" alt="24pc Nuggets" />
+                <p>
+                    Bite-sized, golden perfection. Crispy on the outside, juicy on the inside; snackable legends that never miss.<br />
+                    $20.79 &middot; 1560 cal
+                </p>
+            </div>
+        </a>
+
+        <!-- Large Cajun Fries -->
+        <a href="fries.html">
+            <div class="grid-item" tabindex="0">
+                <h2 class="subheading">Large Cajun Fries</h2>
+                <img src="images/Largecajunfries.png" alt="Large Cajun Fries" />
+                <p>
+                    Thin-cut, crispy-edged, and seasoned to perfection.<br />
+                    $8.79 &middot; 350 cal
+                </p>
+            </div>
         </a>
     </div>
-    <!-- 12pc Chicken tenders alongside price and Description-->
-<a href="chictend.html">
-    <div class="grid-item" tabindex="0">
-        <h2 class="subheading">Chicken Tenders - 12pc</h2>
-        <img src="images/tenders.png" alt="12 pc Chicken Tenders " />
-        <p>Golden, hand-breaded strips. Crispy outside, tender inside,  perfect for dipping, devouring, and repeating.
-        <br><p>  $32.49&middot;1370 cal </p>
-        </p>
-    </div>
-</a>
-<a href="wings.html">
-    <!-- 12pc Boneless alongside price and Description-->
-    <div class="grid-item" tabindex="0">
-        <h2 class="subheading">12pc Boneless Wings </h2>
-        <img src="images/Boneless wings.png" alt="12pc Boneless Wings " />
-        <p>Bold, saucy, and built to thrill. Crispy wings tossed in flavor that hits every time.</p>
-        <br><p> $19.99&middot;900 cal</p>
-    </div>  
-</a>
-    <!-- 8pc Chicken alongside price and Description-->
-<a href="chicken.html">
-    <div class="grid-item" tabindex="0">
-        <h2 class="subheading">8pc Chicken</h2>
-        <img src="images/Chicken.png" alt="8pc Chicken " />
-        <p>A shareable spread of crispy, juicy chicken. Eight pieces of pure comfort  or domination</p>
-        <p> $25.79&middot;1660 cal </p>
-        </div>
-</a>
-        <!-- 24pc Chicken nuggets alongside price and Description-->
-<a href="nugg.html">
-    <div class="grid-item" tabindex="0">
-        <h2 class="subheading">24pc Chicken Nuggets</h2>
-        <img src="images/nuigget.png"alt ="24pc Nuggets" />
-        <p>Bite-sized, golden perfection. Crispy on the outside, juicy on the inside; snackable legends that never miss.</p>
-        <p> $20.79&middot;1560 cal </p>
-    </div>
-</a>
-    <!-- 16pc Potato Wedges alongside Price and Description-->
-<a href="fries.html">
-    <div class="grid-item" tabindex="0">
-        <h2 class="subheading">Large Cajun Fries</h2>
-        <img src="images/Largecajunfries.png" alt="Large Cajun Fries"/>
-        <p>Thin-cut, crispy-edged, and seasoned to perfection.x</p>
-        <p> $8.79&middot;350 cal</p>
-    </div>
-</a>
-    </div>
-</body>
-<footer>
-        </P>TM  & &copy; All Rights Reserved to Crispy Chick Fried Chicken Inc
+
+    <!-- Footer -->
+<footer tabindex="0">
+        <p>tm &copy; all rights reserved to crispy chick fried chicken inc</p>
+        <p>all image and video rights are credited to chat gpt and popeyes</p>
 </footer>
+</body>
 </html>

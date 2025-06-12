@@ -1,51 +1,63 @@
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Crispy Chick Fried Chicken</title>                                          
-        <link rel="stylesheet" href="style.css">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </title>
-    </head>
-    <header>
-    <nav class="nav-bar">
-    <a href="index.html">Home of THE Chicken</a>
-    <a href="deals.html">Deals</a>
-    <a href="index.html" class="logoswap">
-        <img class="Chicken-icon" src="images/ChatGPT Image Jun 11, 2025, 12_26_46 AM.png" alt="Image of a Chicken eating Fried Chicken (yellow)">
-    </a>
-    <a href="history.html">History of Our Brand</a>
-    <a href="menu.html">Menu</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crispy Chick Fried Chicken</title>                                          
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <nav class="nav-bar" tabindex="0">
+        <!-- main navigation bar -->
+        <a href="index.html" tabindex="0">Home of THE Chicken</a> <!-- home page link -->
+        <a href="rules.html" tabindex="0">The Rules</a> <!-- rules page link -->
+        <a href="index.html" class="logoswap" tabindex="0"> <!-- logo link -->
+            <img class="Chicken-icon" src="images/ChatGPT Image Jun 11, 2025, 12_26_46 AM.png" alt="Image of a Chicken eating Fried Chicken (yellow)" tabindex="0">
+        </a>
+        <a href="history.html" tabindex="0">History of Our Brand</a> <!-- brand history link -->
+        <a href="menu.html" tabindex="0">Menu</a> <!-- menu page link -->
     </nav>
 
+    <!-- makes a cluck sound upon hovering the logo icon on the nav bar -->
     <audio id="hoverSound" src="sound/chicken-single-alarm-call-6056.mp3" preload="auto"></audio>
-    <!-- makes a ckuck sound upom hovering the logo icon on the nav bar-->
+    
     <script>
-        
-    const logo = document.querySelector('.Chicken-icon');
-    const sound = document.getElementById('hoverSound');
+        // select the logo image element
+        const logo = document.querySelector('.Chicken-icon');
+        // select the audio element
+        const sound = document.getElementById('hoverSound');
 
-    logo.addEventListener('mouseenter', () => {
-        sound.currentTime = 0;
-        sound.play();
-    });
+        // play sound on mouse enter event on the logo
+        logo.addEventListener('mouseenter', () => {
+            sound.currentTime = 0; // reset audio to start
+            sound.play(); // play audio
+        });
     </script>
-    <p class="heading">Signature Chicken </p>
+
+    <p class="heading" tabindex="0">Signature Chicken</p> <!-- section heading -->
+
     <div class="inline">
-    <img class="menuitems" src="images/Chicken.png"> 
-<div>
-    <p>Our crispy fried chicken is a masterpiece of crunch and juiciness—seasoned to perfection and fried ‘til it sings with golden glory in every bite.
-    </p>
+        <!-- image of the signature chicken -->
+        <img class="menuitems" src="images/Chicken.png" tabindex="0" alt="Signature crispy fried chicken">
 
-    <p> Pick which meal option you want</p>
-    <form>
-    <input type="radio" id="html" name="menuitem6" value="chicken">
-    <label for="html">  Signature Chicken 8pc $25.79&middot;1660 cal  </label><br>
-    <input type="radio" id="chiccombo" name="menuitem6" value="chickensSignature Chicken 8pc $25.79&middot;1660 cal ">
-    <label for="css">Signature Chicken 16pc $38.79&middot;3220 cal </label><br>
-    <input type="submit" id="Indigenous" name="h" value="Submit">
-    </form>
-    </div>      
+        <div>
+            <p tabindex="0">Our crispy fried chicken is a masterpiece of crunch and juiciness—seasoned to perfection and fried ‘til it sings with golden glory in every bite.</p>
+
+            <p tabindex="0">Pick which meal option you want</p>
+
+            <form action="paying.html" method="get" tabindex="0">
+                <input type="radio" id="html" name="menuitem6" value="chicken" tabindex="0">
+                <label for="html" tabindex="0">Signature Chicken 8pc $25.79 &middot; 1660 cal</label><br>
+
+                <input type="radio" id="chiccombo" name="menuitem6" value="chickensSignature Chicken 8pc $25.79&middot;1660 cal" tabindex="0">
+                <label for="chiccombo" tabindex="0">Signature Chicken 16pc $38.79 &middot; 3220 cal</label><br>
+
+                <input type="submit" id="Indigenous" name="h" value="Submit" tabindex="0">
+            </form>
+        </div>
     </div>
-    <footer>
-    </p>TM  & &copy; All Rights Reserved to Crispy Chick Fried Chicken Inc</p>
-    <p> All image and video right are to the credit of Chat GPT and Popeyes</p>
-    </footer>
 
+    <footer tabindex="0">
+        <!-- copyright and credits -->
+        <p>TM &copy; All Rights Reserved to Crispy Chick Fried Chicken Inc</p>
+        <p>All image and video rights are credited to Chat GPT and Popeyes</p>
+    </footer>
+</header>

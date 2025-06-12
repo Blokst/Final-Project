@@ -1,52 +1,101 @@
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Crispy Chick Fried Chicken</title>                                          
-        <link rel="stylesheet" href="style.css">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </title>
-    </head>
-    <header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /> <!-- sets page character encoding -->
+<meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- makes page responsive -->
+<title>Crispy Chick Fried Chicken</title> <!-- page title shown in tab -->
+  <link rel="stylesheet" href="style.css" /> <!-- link to external styles -->
+
+<!-- audio for hover sound -->
+<audio id="hoverSound" src="sound/chicken-single-alarm-call-6056.mp3" preload="auto"></audio>
+
+<style>
+    /* container to show image and text side by side */
+    .inline {
+    display: flex;
+      gap: 20px; /* space between */
+      align-items: flex-start; /* align top */
+    max-width: 800px;
+      margin: 20px auto; /* center horizontally */
+    }
+    /* styles the nugget image size */
+    .menuitems {
+    max-width: 250px;
+    height: auto;
+    }
+    /* big heading style */
+    .heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+    }
+    /* form margin */
+    form {
+    margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+<header>
+    <!-- main site navigation -->
     <nav class="nav-bar">
-    <a href="index.html">Home of THE Chicken</a>
-    <a href="deals.html">Deals</a>
-    <a href="index.html" class="logoswap">
-        <img class="Chicken-icon" src="images/ChatGPT Image Jun 11, 2025, 12_26_46 AM.png" alt="Image of a Chicken eating Fried Chicken (yellow)">
+    <a href="index.html" tabindex="0">Home of THE Chicken</a> <!-- nav link -->
+    <a href="rules.html" tabindex="0">The Rules</a> <!-- nav link -->
+    <a href="index.html" class="logoswap" tabindex="0">
+        <img
+        class="Chicken-icon"
+        src="images/ChatGPT Image Jun 11, 2025, 12_26_46 AM.png"
+        alt="Image of a Chicken eating Fried Chicken (yellow)"
+        /> <!-- clickable logo -->
     </a>
-    <a href="history.html">History of Our Brand</a>
-    <a href="menu.html">Menu</a>
+        <a href="history.html" tabindex="0">History of Our Brand</a> <!-- nav link -->
+        <a href="menu.html" tabindex="0">Menu</a> <!-- nav link -->
     </nav>
+</header>
 
-    <audio id="hoverSound" src="sound/chicken-single-alarm-call-6056.mp3" preload="auto"></audio>
-    <!-- makes a ckuck sound upom hovering the logo icon on the nav bar-->
-    <script>
-        
-    const logo = document.querySelector('.Chicken-icon');
-    const sound = document.getElementById('hoverSound');
-
-    logo.addEventListener('mouseenter', () => {
-        sound.currentTime = 0;
-        sound.play();
+<!-- javaScript for playing sound when hovering on logo -->
+<script>
+    const logo = document.querySelector('.Chicken-icon'); // get logo image
+    const sound = document.getElementById('hoverSound');  // get sound audio element
+    logo.addEventListener('mouseenter', () => {           // when mouse enters logo
+      sound.currentTime = 0;                               // reset sound
+      sound.play();                                        // play sound
     });
-    </script>
-    <p class="heading">Signature Chicken Nuggets</p>
-    <div class="inline">
-    <img class="menuitems" src="images/nuigget.png"> 
-<div>
-    <p>These aren’t just chicken nuggets—they’re golden, crispy bites of pure joy, handcrafted to perfection with a crunch that echoes across dreams. Each piece is seasoned to legendary status, locking in juicy tenderness that melts with every chew. One taste and you'll swear they were blessed by the flavor gods themselves.
+</script>
 
-    </p>
+<main>
+    <!-- page heading -->
+    <p class="heading" tabindex="0">Signature Chicken Nuggets</p>
 
-    <p> Pick which meal option you want</p>
-    <form>
-    <input type="radio" id="html" name="menuitem2" value="nugg">
-    <label for="html">Chicken Nuggets 12pc $10.99&middot;730 cal </label><br>
-    <input type="radio" id="chiccombo" name="menuitem2" value="nuggs">
-    <label for="css"> Chicken Nuggets 24pc $20.79&middot;1560 cal</label><br>
-    <input type="submit" id="Indigenous" name="h" value="Submit">
-    </form>
-    </div>      
+    <!-- container for image and text side by side -->
+<div class="inline">
+    <img class="menuitems" src="images/nuigget.png" alt="Signature Chicken Nuggets" /> <!-- nugget image -->
+
+    <div>
+        <!-- description text -->
+        <p tabindex="0">
+            These aren’t just chicken nuggets—they’re golden, crispy bites of pure joy, handcrafted to perfection with a crunch that echoes across dreams. Each piece is seasoned to legendary status, locking in juicy tenderness that melts with every chew. One taste and you'll swear they were blessed by the flavor gods themselves.
+        </p>
+        <p tabindex="0">Pick which meal option you want</p>
+
+        <!-- form for selecting nuggets meal -->
+        <form action="paying.html" method="get">
+            <input type="radio" id="nugget12" name="menuitem2" value="nugg" required tabindex="0" />
+            <label for="nugget12">Chicken Nuggets 12pc $10.99 &middot; 730 cal</label><br />
+
+            <input type="radio" id="nugget24" name="menuitem2" value="nuggs" tabindex="0" />
+            <label for="nugget24">Chicken Nuggets 24pc $20.79 &middot; 1560 cal</label><br />
+
+            <input type="submit" value="Submit" tabindex="0" /> <!-- submit button -->
+            </form>
+        </div>
     </div>
-    <footer>
-    </p>TM  & &copy; All Rights Reserved to Crispy Chick Fried Chicken Inc</p>
-    <p> All image and video right are to the credit of Chat GPT and Popeyes</p>
-    </footer>
+</main>
 
+<footer>
+    <!-- footer copyright -->
+    <p tabindex="0">TM &copy; All Rights Reserved to Crispy Chick Fried Chicken Inc</p>
+    <p tabindex="0">All image and video rights to ChatGPT and Popeyes</p>
+</footer>
+</body>
+</html>
